@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/go_up.css">
+    <link rel="shortcut icon" type="image/png" href="images/icon.png"/>
+    <!--Icons made by <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
+    <script src="js/project.js"></script>
+    <title>Projects</title>
+</head>
+<body>
+
+<div class="skip"><a href="#main">Skip to Main Content</a></div>
+<div class="mynav">
+    <nav>
+        <ul>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="current"><a href="project.html">Project</a></li>
+            <li><a href="background.html">Background</a></li>
+            <li><a href="index.html">🏠 Home</a></li>
+        </ul>
+    </nav>
+</div>
+<header>
+    <div class="project_h" id="main">
+        <div class="project_title">
+            <h1>Projects</h1>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="goup">
+        <div class="gridcontainer">
+            <div class="project_container">
+                <div class='text box flexcontainer' tabindex="0" id="P1">
+                    <div>
+                        <img src="images/project1_1.JPG" alt="project1_1">
+                    </div>
+                    <div>
+                        <p class="projectname">
+                            Information visualization course project
+                        </p>
+                        <p>
+                            I Build a webpage to help readers learn the celestial movement based on universal
+                            gravitation.
+                            By using HTML&CSS, I deploy and beautify the webpage to make it clearer and more attractive.
+                            Besides, there are many interaction modules provided for users to simulate the circular
+                            motion
+                            of celestial
+                            bodies using JavaScript.
+                        </p>
+                    </div>
+                </div>
+
+                <div class='text box flexcontainer' tabindex="0" id="P2">
+                    <div>
+                        <p class="projectname">
+                            tsunami data downloading and processing platform
+                        </p>
+                        <p>
+                            The platform is designed to automatically download and process tsunami data.
+                            The data is obtained from earthquake and tsunami data website using Website Crawler.
+                            After that, I perform some data processing and then built a model that can automatically
+                            calculate the
+                            required information of tsunami using math algorithm.
+                            Finally, by using Python matplotlib and JavaScript, there is map displayed for user.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="images/project2_1.JPG" alt="project2_1">
+                    </div>
+                </div>
+
+                <div class='text box flexcontainer' tabindex="0" id="P3">
+                    <div>
+                        <img src="images/project3_1.JPG" alt="project3_1">
+                    </div>
+                    <div>
+                        <p class="projectname">App for TV lovers</p>
+                        <p>
+                            My project is aimed at those who love TV shows. The purpose is to give tv-lovers a very
+                            convenient tool to get the detailed information of all the TV shows in the world in 2018. In
+                            my
+                            program, I get Top 200 TV shows in 2018 from The Movie Database API. Since the returned
+                            results
+                            from this API shows country in country codes. I also scrape from https://countrycode.org/ to
+                            get
+                            each Country’s full name.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class='contenttabel'>
+                <a href="#P1" class='project_tab'>Project1</a>
+                <a href="#P2" class='project_tab'>Project2</a>
+                <a href="#P3" class='project_tab'>Project3</a>
+                <a href="#demo" class='project_tab'>Demo</a>
+            </div>
+
+        </div>
+        <div class="gridcontainer">
+            <h1>DEMO</h1><br>
+            <h2>Visualization of celestial movement</h2>
+            <div id="demo">
+                <div id="combine2">
+                    <div id="planet2">
+                        <div id="red2">
+                            <div id="gray2"></div>
+                            <div id="blue2"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="container2">
+                        <img id="function2" src="images/function2.png" alt="function2">
+                        <div id="blue_point2"></div>
+                        <div id="setinfo2">
+                            <p class="pointText"> mass</p>
+                            <p id="mass">1</p><br>
+                            <p class="pointText"> tangential velocity </p>
+                            <p id="velo2">1.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="control_element">
+                    <label for="selectbox">Radius:</label>
+                    <select id="selectbox">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <div>
+                        <br><br>
+                        <label for="myRange2">Mass:</label>
+                        <input type="range" id="myRange2" min="1" max="16" value="1" step="1">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="occupy"></div>
+    </div>
+</main>
+<footer>
+    <div class="footerContent">
+        <div class="email">Email: astridq@umich.edu</div>
+        <div class="socialmedia"><a href="https://www.instagram.com/astridzhou_/">Instagram</a></div>
+        <div class="socialmedia"><a href="https://www.facebook.com/astrid.zhou.948">Facebook</a></div>
+    </div>
+    <p>University of Michigan School of Information <br/>
+        &copy; Runqing Zhou - SI539 Web Design 2019-2020</p>
+</footer>
+</body>
+</html>
+

@@ -1,0 +1,22 @@
+.goup {
+    position: relative;
+    -webkit-animation-name: animatehead;
+    -webkit-animation-duration: 1s;
+    animation-name: animatehead;
+    animation-duration: 1s
+}
+@-webkit-keyframes animatehead {
+    from { bottom:-150px; opacity:0 }
+    to { bottom:0px; opacity:1 }
+}
+@keyframes animatehead {
+    from { bottom: -150px; opacity: 0 }
+    to { bottom: 0; opacity: 1 }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .goup{
+      -webkit-animation: none;
+      animation: none;
+  }
+}

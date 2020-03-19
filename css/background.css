@@ -1,0 +1,185 @@
+.education_h {
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center; /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover; /* Parallax effect */
+    height: 300px; /* Parallax effect */
+    background-color: black;
+    background-image: url("../images/education.jpeg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background_title {
+    width: 360px;
+    height: 150px;
+    color: #63403f;
+    background-color: rgba(255, 255, 255, .7);
+    text-align: center;
+}
+
+.text {
+    padding: 30px;
+    max-width: 600px;
+    align-self: center;
+}
+.schoolname{
+    font-weight: bold;
+    text-align: center;
+}
+.badge {
+    width: 300px;
+    height: 300px;
+}
+
+.education {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    padding: 20px;
+}
+
+.education > div {
+    justify-self: center;
+    align-self: center;
+}
+
+.education:nth-child(1) {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+}
+
+.education:nth-child(2) {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+}
+
+.activity_h {
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center; /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover; /* Parallax effect */
+    height: 300px; /* Parallax effect */
+    background-color: black;
+    background-image: url("../images/activity.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.activity_text {
+    font-family: sans-serif;
+    line-height: 1.6;
+    padding: 30px;
+    align-self: center;
+    text-align: justify;
+    border:5px rosybrown outset;
+}
+.activity{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+    padding: 80px;
+}
+.activity:nth-child(1) {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+}
+
+.activity:nth-child(2) {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+}
+.activity:nth-child(3) {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+}
+
+.panel, .flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #ffe3e4;
+    border: solid 1px #d7a3a3;
+}
+
+.panel {
+    padding: 10px;
+    display: none;
+}
+
+@media all and (min-width: 720px) {
+    .activity{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 30px;
+        grid-column-gap: 30px;
+        padding: 80px;
+    }
+    .activity:nth-child(1) {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .activity:nth-child(2) {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    .activity :nth-child(3) {
+        grid-row: 2/3;
+        grid-column: 1/-1;
+    }
+
+
+}
+
+@media all and (min-width: 1024px) {
+    .badge {
+        width: 250px;
+        height: 250px;
+    }
+    .education {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .education > div {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .education:nth-child(1) {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .education:nth-child(2) {
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+
+    .activity{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 30px;
+        padding: 80px;
+    }
+    .activity div:nth-child(1) {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .activity div:nth-child(2) {
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    .activity div:nth-child(3) {
+        grid-row: 1/2;
+        grid-column: 3/4;
+    }
+
+}
